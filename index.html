@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="bacon251's blog about CS, jazz music, security and everything else.">
+    <title>Yanlei Wang</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="data/posts.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="site-header">
+        <a class="site-name" href="./">Yanlei Wang</a>
+        <p class="site-note">bacon251's blog about CS and jazz music.</p>
+      </header>
+
+      <nav class="filters" aria-label="文章标签">
+        <button class="filter is-active" type="button" data-tag="all">all</button>
+        <button class="filter" type="button" data-tag="jazz">jazz</button>
+        <button class="filter" type="button" data-tag="security">security</button>
+        <button class="filter" type="button" data-tag="fuckinggambling">fuckinggambling</button>
+        <button class="filter" type="button" data-tag="other">other</button>
+      </nav>
+
+      <section aria-labelledby="posts-title">
+        <h1 class="section-title" id="posts-title">Notes</h1>
+        <div id="post-list" class="post-list"></div>
+        <p id="empty-state" class="empty-state" hidden>这个标签下还没有文章。</p>
+      </section>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> Yanlei Wang</span>
+        <a href="https://github.com/bacon251">GitHub</a>
+      </footer>
+    </main>
+  </body>
+</html>
